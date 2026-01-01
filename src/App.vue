@@ -1,15 +1,9 @@
 <script setup>
-
+import DepartmentView from './components/DepartmentView.vue';
 </script>
 
 <template>
-  <header>
-    
-  </header>
-
-  <main>
-    
-  </main>
+  <DepartmentView />
 </template>
 
 <style scoped>
