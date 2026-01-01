@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Computer Science & Engineering",
+    "code": "CSE",
+    "created_at": "2025-01-10T08:45:12.000000Z",
+    "updated_at": "2025-01-10T08:45:12.000000Z"
+  },
+  {
+    "id": 2,
+    "name": "Electrical & Electronic Engineering",
+    "code": "EEE",
+    "created_at": "2025-01-11T09:12:30.000000Z",
+    "updated_at": "2025-01-11T09:12:30.000000Z"
+  },
+  {
+    "id": 3,
+    "name": "Business Administration",
+    "code": "BBA",
+    "created_at": "2025-01-12T10:20:05.000000Z",
+    "updated_at": "2025-01-12T10:20:05.000000Z"
+  }
+]
