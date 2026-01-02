@@ -1,0 +1,29 @@
+vscode setup:
+autosave turned on
+
+
+
+onMounted() is a lifecycle hook
+runs after the current component is created and rendered.
+as data should be loaded after the component mounts not before.
+
+
+.value inside script
+no need of .value inside template
+
+steps:
+created DepartmentView
+installed vue-router
+created index.js inside router
+created the departments route and exported the router
+app.use(router) inside the main.js to register the router
+RouterView inside the App.vue
+
+created DepartmentDetailsView
+need useRoute to get the id
+find the object from the json data with the same id
+and assign the object to the reactive state by .value
+use v-if v-else for corner case
+
+as this view will loaded from the DepartmentView
+in that apply useRouter to push the dynamic path to the url

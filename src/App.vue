@@ -1,9 +1,9 @@
 <script setup>
-import DepartmentView from './components/DepartmentView.vue';
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
-  <DepartmentView />
+  <RouterView />
 </template>
 
 <style scoped>
