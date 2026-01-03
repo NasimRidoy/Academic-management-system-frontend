@@ -1,9 +1,10 @@
 
 <script setup>
 import {ref, onMounted} from 'vue'
-import { useRoute } from 'vue-router';
-import departmentsData from '../data/departmentsData.json';
+import { useRoute, useRouter } from 'vue-router';
+import departmentsData from '../../data/departmentsData.json';
 const route = useRoute()
+const router = useRouter()
 const department = ref(null) //can be const but it can change then why? an object or nothing
 
 onMounted(() => {
@@ -13,6 +14,10 @@ onMounted(() => {
         d => d.id === id   //loops through each object d and returns the d that returns true for the condition
     )
 })
+const goBack = () => {
+    router.push('/departments')
+}
+
 </script>
 <template>
     <div>
@@ -28,6 +33,8 @@ onMounted(() => {
         <div v-else>
             <p>Department not found</p>
         </div>
+
+        <button @click="goBack">Back</button>
 
     </div>
 

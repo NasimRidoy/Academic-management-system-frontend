@@ -2,7 +2,6 @@ vscode setup:
 autosave turned on
 
 
-
 onMounted() is a lifecycle hook
 runs after the current component is created and rendered.
 as data should be loaded after the component mounts not before.
@@ -27,3 +26,15 @@ use v-if v-else for corner case
 
 as this view will loaded from the DepartmentView
 in that apply useRouter to push the dynamic path to the url
+
+
+v-if is must for rendering data that is fetched from api.
+bcz the execution flow:
+script runs
+state variable initially null
+template renders
+onMounted runs
+than the html get the data
+
+so template renders before onMounted, so it tries to access property of null state value
+which gives runtime error.

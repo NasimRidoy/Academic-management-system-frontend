@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Ahmed Rahman",
+    "email": "ahmed@university.edu",
+    "phone": "01711111111",
+    "department_id": 1,
+    "department": {
+      "id": 1,
+      "name": "Computer Science & Engineering"
+    },
+    "created_at": "2025-01-10T08:45:12.000000Z",
+    "updated_at": "2025-01-10T08:45:12.000000Z"
+  },
+  {
+    "id": 2,
+    "name": "Dr. Nusrat Jahan",
+    "email": "nusrat@university.edu",
+    "phone": "01822222222",
+    "department_id": 2,
+    "department": {
+      "id": 2,
+      "name": "Electrical & Electronic Engineering"
+    },
+    "created_at": "2024-01-10T08:45:12.000000Z",
+    "updated_at": "2024-01-10T08:45:12.000000Z"
+  }
+]

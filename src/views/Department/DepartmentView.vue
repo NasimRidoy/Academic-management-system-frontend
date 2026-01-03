@@ -1,5 +1,5 @@
 <script setup>
-import departmentsData from '../data/departmentsData.json';
+import departmentsData from '../../data/departmentsData.json';
 import { ref, onMounted } from 'vue';
 import {useRouter} from 'vue-router';
 
@@ -11,9 +11,11 @@ onMounted(() => {
   departments.value = departmentsData
 })
 
+
+
 const updateDepartment = (department) => {
   console.log("The department: ", department);
-  alert(`The department: ${department.name} is being updated`);
+  router.push(`/departments/${department.id}/edit`);
 }
 const showDepartment = (department) => {
   router.push(`/departments/${department.id}`);
@@ -32,11 +34,20 @@ const deleteDepartment = (id) => {
   // await axios.delete(`/api/departments/${id}`)
 }
 
+const goToCreate = () => {
+  router.push('departments/create')
+}
+
 </script>
 
 <template>
   <div class="department-view">
-    <h2>Departments</h2>
+    <h2>
+      Departments
+    </h2>
+    <button @click="goToCreate">
+        Create Department
+    </button>
 
     <table class="admin-table">
       <thead>
